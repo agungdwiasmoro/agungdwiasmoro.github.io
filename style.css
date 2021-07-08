@@ -1,0 +1,172 @@
+body {
+    background-color: #ffff;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 14px;
+}
+
+section {
+    background-color: #ffff;
+}
+
+h4 {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-weight: 300;
+}
+h4:hover {
+    font-weight: 500;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.box {
+    width: 25px;
+    height: 25px;
+    background-color: #363636;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #363636;
+}
+.nav-link:hover {
+    border-bottom: 1px solid #0d6efd;
+    padding-bottom: 1px;
+}
+
+/* Profile */
+
+.Profil img {
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.Profil h2 {
+    text-align: center;
+}
+
+.Profil h3 {
+    font-size: 16px;
+    font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* Animation */
+.Profil h3 {
+    animation: animated-text 6s steps(39,end) 1s 1 normal both,
+               animated-cursor 600ms steps(39,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 400px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(0,255,0,.75);}
+    to{border-right-color: transparent;}
+  }
+
+
+/* About */
+#About {
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+#About h4 {
+    margin-bottom: 50px;
+}
+#About img {
+    width: 150px;
+}
+
+
+/* project */
+#project {
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+#project h4 {
+    margin-bottom: 50px;
+}
+
+.card {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+}
+.card:hover {
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
+}
+#project p {
+    text-align: center;
+}
+
+/* skill */
+#skill {
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+#skill h4 {
+    margin-bottom: 50px;
+}
+#skill img {
+    height: 60px;
+    margin-bottom: 20px;
+}
+#skill img:hover {
+    padding-bottom: 5px;
+}
+#skill hr {
+    margin-top: 50px;
+}
+
+/* kontak */
+#kontak {
+    padding-top: 50px;
+}
+
+/* footer */
+.footer {
+    background-color: #363636;
+    padding-bottom: 10px;
+}
+#spacer {
+    height: 50px;
+}
+
+@media (min-width: 992px) {
+    h4 {
+        font-size: 35px !important;
+    }
+
+    .box {
+        width: 50px;
+        height: 50px;
+        background-color: #363636;
+    }
+
+    /*Profil */
+    .Profil {
+        margin-bottom: 20px;
+    }
+
+    .Profil img {
+        width: 250px;
+    }
+    .Profil h2 {
+        text-align: left;
+    }
+
+    /* About */
+    #About img {
+        width: 250px;
+    }
+
+    /* skill */
+    #skill img {
+        height: 100px;
+        
+    }
+}
