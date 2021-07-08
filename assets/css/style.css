@@ -132,9 +132,16 @@ h4:hover {
     background-color: #363636;
     padding-bottom: 10px;
 }
+.footer img {
+    margin-top: 20px;
+    width: 25px;
+    height: 25px;
+}
 #spacer {
     height: 50px;
 }
+
+
 
 @media (min-width: 992px) {
     h4 {
