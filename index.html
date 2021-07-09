@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>My Portfolio</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -88,7 +88,7 @@
           <div class="col-md-4">
             <img src="img/picture.jpg" class="rounded-circle mb-5" data-aos="fade-right" data-aos-delay="300">
           </div>
-          <div class="col-md-4 mr5 align-self-center" data-aos="fade-down" data-aos-delay="500">
+          <div class="col-md-4 align-self-center" data-aos="fade-down" data-aos-delay="500">
             <p>Nama saya Agung Dwi Asmoro saya anak kedua dari 3 bersaudara. Lahir di Purworejo Jawa Tengah. Saya merupakan lulusan Sarjana Teknik Informatika dari salah satu PTS di Jakarta. Saya seorang yang hamble, disiplin, dan bertanggung jawab. Hobi saya berolahraga dan juga memasak. Saya sangat suka akan tantangan dan tidak mudah menyerah.
             </p>
             <a href="#kontak"><button class="btn btn-default btn-primary">Hire Me!</button></a>
@@ -110,33 +110,31 @@
     <!-- Project -->
     <section id="project" class="project">
       <div class="container">
-        <div class="row d-flex flex-row-reverse">
-          <div class="row" data-aos="fade-zoom-in" data-aos-offset="200">
-            <h4 class="text-center">My Project</h4>
+        <div class="row" data-aos="fade-zoom-in" data-aos-offset="200">
+          <h4 class="text-center">My Project</h4>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3" data-aos="fade-right" data-aos-delay="400">
+            <div class="card">
+              <img src="img/project2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">My Portfolio</p>
+              </div>
+            </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-md-3" data-aos="fade-right" data-aos-delay="400">
-              <div class="card">
-                <img src="img/project2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">My Portfolio</p>
-                </div>
+          <div class="col-md-3" data-aos="fade-zoom-out" data-aos-delay="200">
+            <div class="card">
+              <img src="img/project1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">rumahidamanku.com</p>
               </div>
             </div>
-            <div class="col-md-3" data-aos="fade-zoom-out" data-aos-delay="200">
-              <div class="card">
-                <img src="img/project1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">rumahidamanku.com</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3" data-aos="fade-left" data-aos-delay="600">
-              <div class="card">
-                <img src="img/project3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Company Profil.</p>
-                </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-left" data-aos-delay="600">
+            <div class="card">
+              <img src="img/project3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Company Profil.</p>
               </div>
             </div>
           </div>
@@ -213,19 +211,29 @@
         </div>
         <div class="row justify-content-center" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="500">
           <div class="col-md-6">
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="Tuliskan alamat email anda">
+            <div class="alert alert-primary alert-dismissible fade show d-none" role="alert">
+              <strong>Terima Kasih,</strong> Pesan anda telah terkirim.
+              <button type="button" class="btn-close btn-sm" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <div class="mb-3">
-              <label for="Nama" class="form-label">Nama Anda</label>
-              <input type="nama" class="form-control" id="nama" placeholder="Tuliskan nama lengkap anda">
-            </div>
-            <div class="mb-3">
-              <label for="pesan" class="form-label">Pesan</label>
-              <textarea class="form-control" id="pesan" rows="3">Tuliskan pesan anda disini!</textarea>
-            </div>
-            <button class="btn btn-primary btn-sm float-end">Submit</button>
+            <form name="submit-to-google-sheet">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Tuliskan alamat email anda">
+              </div>
+              <div class="mb-3">
+                <label for="Nama" class="form-label">Nama Anda</label>
+                <input type="nama" name="nama" class="form-control" id="nama" placeholder="Tuliskan nama lengkap anda">
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" name="pesan" id="pesan" rows="3">Tuliskan pesan anda disini!</textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-sm float-end btn-kirim">Submit</button>
+              <button class="btn btn-primary btn-sm float-end d-none btn-loading" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -238,21 +246,21 @@
     </section>
 
     <footer class="footer text-center">
-      <h5 class="text-white">Created by <a href="" class="text-white">Agung Dwi Asmoro</a></h5>
       <div class="row justify-content-center">
-        <div class="col-1">
+        <div class="col-2 col-md-1">
           <a href="https://api.whatsapp.com/send?phone=6285643001135"><img src="img/wa.png" alt="WA"></a>
         </div>
-        <div class="col-1">
+        <div class="col-2 col-md-1">
           <a href="https://www.instagram.com/agungdwiasmoro/"><img src="img/ig.png" alt="IG"></a>
         </div>
-        <div class="col-1">
+        <div class="col-2 col-md-1">
           <a href="mailto:dwiagung591@gmail.com"><img src="img/email.png" class="rounded-circle" alt="EMAIL"></a>
         </div>
-        <div class="col-1">
+        <div class="col-2 col-md-1">
           <a href="https://github.com/agungdwiasmoro"><img src="img/github.png" alt="GITHUB"></a>
         </div>
-      </div>
+      </div><hr>
+      <h5 class="text-white">Created by <a href="" class="text-white">Agung Dwi Asmoro</a></h5>
     </footer>
 
     
@@ -271,6 +279,32 @@
       gsap.from("#box1", {duration: 1.5, x: 500, opacity: 0, scale: 0.5, delay: 1, rotation:360});
      
     </script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx9ejeenvmbkJAV_B6kR8OivWGbt4mo6ItMABjqSIGR5mX_Zj3jdJZK4yWIi9Z0lEu-/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const alert = document.querySelector('.alert');
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        // ketika button diklik
+        // tampilkan button loading
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            // stelah proses selesai
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            alert.classList.toggle('d-none');
+            form.reset();
+            console.log('Success!', response)})
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
