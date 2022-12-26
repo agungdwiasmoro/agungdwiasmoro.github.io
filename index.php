@@ -26,7 +26,7 @@
 <meta content='general' name='rating'/>
 <meta content='true' name='MSSmartTagsPreventParsing'/>
 <meta content='Aeiwi, Alexa, AllTheWeb, AltaVista, AOL Netfind, Anzwers, Canada, DirectHit, EuroSeek, Excite, Overture, Go, Google, HotBot. InfoMak, Kanoodle, Lycos, MasterSite, National Directory, Northern Light, SearchIt, SimpleSearch, WebsMostLinked, WebTop, What-U-Seek, AOL, Yahoo, WebCrawler, Infoseek, Excite, Magellan, LookSmart, bing, CNET, Googlebot' name='search engines'/>
-<link href="image/logo.jpg" rel="shortcut icon" type="image/x-icon">
+<link href="img/logo.jpg" rel="shortcut icon" type="image/x-icon">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
 <link rel="stylesheet" href="mycss.css">
@@ -41,7 +41,7 @@
           <nav class="navbar navbar-expand-lg navbar-light bg-transparant fixed-top shadow-sm">
               <div class="container">
                   <a class="d-flex align-items-center mb-md-0 me-md-auto text-dark text-decoration-none" href="">
-                      <img src="image/logo.jpg" width="40" height="40" class="d-inline-block pull-left ms-2 me-2" alt="">
+                      <img src="img/logo.jpg" width="40" height="40" class="d-inline-block pull-left ms-2 me-2" alt="">
                       <span class="fs-5 fw-bolder d-sm-block d-lg-none">Wirasena Jaya</span>&nbsp;
                       <span class="fs-5 fw-bolder ps-3 d-none d-lg-block">Wirasena Jaya Group</span>
                   </a>
@@ -76,7 +76,7 @@
                
 
         <!-- jumbotron Start -->
-        <section class="jumbotron" style="background-image: url('image/banner2.jpg'); background-size: cover; background-position: center; ">
+        <section class="jumbotron" style="background-image: url('img/banner2.jpg'); background-size: cover; background-position: center; ">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-8 greeting">
@@ -104,7 +104,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 py-5 ps-5 img-about d-none d-lg-block">
-                        <img src="image/banner1.jpg" alt="" class="img-fluid rounded">
+                        <img src="img/banner1.jpg" alt="" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -119,25 +119,25 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <div class="card bg-white mb-2 rounded shadow-sm">
-                        <img src="image/hospital.jpg" alt="" class="img-fluid mb-3 p-1"><hr>
+                        <img src="img/hospital.jpg" alt="" class="img-fluid mb-3 p-1"><hr>
                         <figcaption class="text-center fw-bolder"><h4>Hospital</h4></figcaption>
                         </div>
                     </div>
                     <div class="col-6 col-md-3">
                         <div class="card bg-white mb-2 rounded shadow-sm">
-                        <img src="image/hotel.jpg" alt="" class="img-fluid mb-3 p-1"><hr>
+                        <img src="img/hotel.jpg" alt="" class="img-fluid mb-3 p-1"><hr>
                         <figcaption class="text-center fw-bolder"><h4>Hotel</h4></figcaption>
                         </div>
                     </div>
                     <div class="col-6 col-md-3">
                         <div class="card bg-white mb2 rounded shadow-sm">
-                        <img src="image/kitchen.jpg" alt="" class="img-fluid mb-3 p-1"><hr>
+                        <img src="img/kitchen.jpg" alt="" class="img-fluid mb-3 p-1"><hr>
                         <figcaption class="text-center fw-bolder"><h4>Profesional Kitchen</h4></figcaption>
                         </div>
                     </div>
                     <div class="col-6 col-md-3">
                         <div class="card bg-white mb-2 rounded shadow-sm">
-                        <img src="image/resturant.jpg" alt="" class="img-fluid mb-3 p-1"><hr>
+                        <img src="img/resturant.jpg" alt="" class="img-fluid mb-3 p-1"><hr>
                         <figcaption class="text-center fw-bolder"><h4>Restaurant</h4></figcaption>
                         </div>
                     </div>
@@ -155,7 +155,7 @@
                     <div class="col-md-4 mb-3">
                         <div class="d-flex shadow px-0">
                             <div class="col-5">
-                                <img src="image/hotel.jpg" alt="" class="img-fluid">
+                                <img src="img/hotel.jpg" alt="" class="img-fluid">
                             </div>
                             <div class="col-7 ps-2">
                                 <h4>Lorem, ipsum dolor.</h4>
@@ -166,7 +166,7 @@
                     <div class="col-md-4 mb-3">
                         <div class="d-flex shadow px-0">
                             <div class="col-5">
-                                <img src="image/hospital.jpg" alt="" class="img-fluid">
+                                <img src="img/hospital.jpg" alt="" class="img-fluid">
                             </div>
                             <div class="col-7 ps-2">
                                 <h4>Lorem, ipsum dolor.</h4>
@@ -177,7 +177,7 @@
                     <div class="col-md-4 mb-3">
                         <div class="d-flex shadow px-0">
                             <div class="col-5">
-                                <img src="image/resturant.jpg" alt="" class="img-fluid">
+                                <img src="img/resturant.jpg" alt="" class="img-fluid">
                             </div>
                             <div class="col-7 ps-2">
                                 <h4>Lorem, ipsum dolor.</h4>
